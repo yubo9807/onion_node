@@ -25,7 +25,7 @@ export default class {
    * 回调
    */
   async callback() {
-    return this.#compose(this.performFuncList, this.ctx, this.next);
+    return await this.#compose(this.performFuncList, this.ctx, this.next);
   }
 
   /**
